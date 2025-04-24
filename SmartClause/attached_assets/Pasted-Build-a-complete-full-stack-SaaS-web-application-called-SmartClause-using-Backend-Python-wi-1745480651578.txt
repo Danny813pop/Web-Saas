@@ -1,0 +1,58 @@
+Build a complete, full-stack SaaS web application called “SmartClause” using:
+		•	Backend: Python with FastAPI
+	•	Frontend: React + Tailwind CSS
+	•	Auth: Supabase (email/password)
+	•	Database: Supabase (PostgreSQL)
+	•	Payments: Stripe
+	•	AI: GPT-4 via OpenAI API
+	•	File parsing: PyMuPDF (PDFs) and python-docx (DOCX)
+	•	Hosting: Vercel (frontend) and Railway (backend)
+
+	Core Features:
+
+	1. Contract Analyzer Page (Main):
+		•	Upload PDF or DOCX file
+	•	Extract text and send to GPT-4
+	•	Generate and display:
+	•	Summary of key points (bullet format)
+	•	Risk Score (Green/Yellow/Red)
+	•	Highlighted risky clauses
+	•	“AI Suggestions” for safer clause alternatives
+	•	“Download Report” as PDF
+
+	2. Clause Generator Page:
+		•	User selects clause type from dropdown (e.g., NDA, Payment Terms, Termination)
+	•	Choose tone: Formal / Friendly / Aggressive / Neutral
+	•	GPT-4 generates a legally sound, editable clause
+	•	Copy button + “Add to Contract” (optional saved clauses)
+
+	3. AI Contract Q&A Page:
+		•	User uploads or selects a previously uploaded contract
+	•	Types natural questions like:
+	•	“Can they terminate this contract early?”
+	•	“Am I liable for damages?”
+	•	GPT-4 answers with context-aware reasoning
+
+	4. Dashboard Page (Post-login):
+		•	View uploaded contracts with date, file type, risk score
+	•	Click to view full analysis or delete
+	•	“New Contract” button
+
+	5. Account Page:
+		•	Profile (email, plan type, usage stats)
+	•	Change password
+	•	Subscription info via Stripe (upgrade, cancel, etc.)
+
+	6. Onboarding & Landing Page:
+		•	Marketing landing page with pricing table
+	•	Demo video or GIF preview of features
+	•	Signup/Login options
+
+	Requirements:
+		•	Fully responsive UI
+	•	Working routing/navigation across all pages
+	•	Protected routes (only logged-in users can use analyzers/Q&A)
+	•	Input validation and error handling
+	•	Include setup instructions in README.md for frontend and backend
+
+	Make sure all buttons, pages, and generators work — don’t skip any UI logic or API integration. Use clean file structure and comments throughout
